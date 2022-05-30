@@ -1,0 +1,26 @@
+.vidio {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 87px;
+    padding-bottom: 40px;
+    position: relative;
+  
+    &__player-block {
+      display: flex;
+      justify-content: center;
+      background-image: url('../../assets/images/Group.svg');
+      background-repeat: no-repeat;
+      background-position: 48px -2px;
+      padding-top: 47px;
+      margin-left: -13px;
+    }
+  }
+  .vidio:before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 78px;
+    left: 1px;
+    width: 74px;
+    border-bottom: 5px solid #e33e54;
+  }

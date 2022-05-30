@@ -1,0 +1,48 @@
+.process {
+    position: relative;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 50px 0 45px 0;
+  
+    &__list {
+      padding: 30px 0 0 0;
+      max-width: 1220px;
+      list-style-type: none;
+      counter-reset: list;
+      display: flex;
+    }
+    &__item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 81px;
+      padding-left: 80px;
+      font-weight: 400;
+      font-size: 16px;
+      color: #000000;
+      line-height: 30px;
+    }
+  
+    &__item:before {
+      display: block;
+      counter-increment: list;
+      content: counter(list);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 85px;
+      color: #e33e54;
+      opacity: 0.2;
+    }
+  }
+  
+  .process:before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 74px;
+    top: 41px;
+    left: 3px;
+    border-bottom: 5px solid #e33e54;
+  }

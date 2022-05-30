@@ -1,0 +1,33 @@
+include ../../views/helpers/mixins
+block variables
+
+header.header 
+  a.header__logo
+   img(src="../assets/images/Logo.svg", alt="Logo")
+
+  div.header__burger
+    div.header__burger-line
+        div.burger-line_sp
+        div.burger-line_sp
+        div.burger-line_sp
+ 
+
+  nav.nav
+    ul.nav__list
+     for i in navLinks
+       li.nav__item
+         a(href=i.link).nav__link=i.name
+
+  a.tel(href="tel: +7 8125092198") 
+   <span>+7 (812)</span> 509 21 98
+
+  div.popup Перезвоните мне
+ 
+  +socialIcons("social-icons--mr60")    
+    
+ 
+  div.group
+    for i in groupIcons
+      div(class="group__icon" + " " + i.modifier)
+          svg(class=i.class) 
+             use(xlink:href=i.pathName)

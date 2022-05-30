@@ -1,0 +1,9 @@
+block variables
+
+mixin socialIcons(padding,margin,orange)
+  div(class="social-icons" + " " + padding)
+       for i in iconsPaths 
+          a(class="social-icons__link" + " " + margin)(href="") 
+            svg(class=i.class + " " + orange) 
+               use(xlink:href=i.imgPath )
+          
